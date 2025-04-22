@@ -12,6 +12,7 @@
     "@types/three": "0.162.0",
     "antd": "^5.24.8",
     "emailjs-com": "^3.2.0",
+    "gh-pages": "^6.3.0",
     "maath": "0.10.7",
     "postprocessing": "6.34.3",
     "react": "18.2.0",
@@ -27,7 +28,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +54,6 @@
     "@react-three/drei": "^10.0.6",
     "@react-three/postprocessing": "^3.0.4",
     "@types/three": "^0.175.0"
-  }
+  },
+  "homepage": "https://hyungbeom.github.io/home"
 }
